@@ -1,0 +1,12 @@
+{
+  "name": "jsprac",
+  "version": "1.0.0",
+  "description": "JS Practice Intialize June 202423",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dinesh",
+  "license": "ISC",
+  "keywords": []
+}
