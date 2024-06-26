@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="one">Hello</p>
+
+    <h1 id="titleChange">Hello Dinesh</h1>
+    <button onclick="c()">Click to change</button>
+
+    <script>
+        var h1=document.getElementById("titleChange")
+        console.log(h1.textContent)
+
+        function c(){
+            h1.textContent="Bye Dinesh"
+        }
+
+    </script>
+
+    <!-- Exercise 1 -->
+    <h1 id="title">Hello World</h1>
+
+    <script>
+        var a = document.getElementById("title")
+
+        console.log(a.textContent)
+        a.textContent = "Bye World"
+    </script>
+    <!-- Exercise 1 -->
+    
+    <script src="dom.js"></script>
+</body>
+</html>
