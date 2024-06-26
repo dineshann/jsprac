@@ -58,6 +58,7 @@ function Favourite() {
 Favourite()
 Favourite()
 
+/** JavaScript Parameters **/ 
 function add(a,b) {
     console.log(a+b)
 }
