@@ -9,17 +9,45 @@
     <p id="one">Hello</p>
 
     <h1 id="titleChange">Hello Dinesh</h1>
-    <button onclick="c()">Click to change</button>
+    <button onclick="change()">Click to change</button>
 
     <script>
         var h1=document.getElementById("titleChange")
         console.log(h1.textContent)
 
-        function c(){
+        function change(){
             h1.textContent="Bye Dinesh"
         }
 
     </script>
+
+    <br> <br> <hr> <br> <br>
+
+
+    <input type="text" id="num1" />
+    <input type="text" id="num2" />
+    <button onclick="resultfun()">Calc Total</button>
+    <p id="result">Result</p>
+
+    <script>
+        //Selecting the input 1&2
+        var m = document.getElementById("num1")
+        var n = document.getElementById("num2")
+        // Selecting result
+        var t = document.getElementById("result")
+
+        function resultfun() {
+            var mvalue = Number(m.value)
+            var nvalue = Number(n.value)
+
+            var total = mvalue+nvalue
+            t.textContent=total
+        }
+    </script>
+
+    <br>
+    <br>
+    <hr>
 
     <!-- Exercise 1 -->
     <h1 id="title">Hello World</h1>
@@ -33,5 +61,11 @@
     <!-- Exercise 1 -->
     
     <script src="dom.js"></script>
+
+    <!-- Random number -->
+    <script>
+        var z = Math.random()
+        console.log(Math.floor(z*10)+1)
+    </script>
 </body>
 </html>
