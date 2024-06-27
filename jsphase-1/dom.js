@@ -30,5 +30,17 @@
 
 var para = document.getElementById("one")
 console.log(para.textContent)
-para.textContent = "Bye"
+para.textContent = "Great Job Dinesh"
+
+// Practice 
+var input1 = document.getElementById("number1")
+var input2 = document.getElementById("number2")
+var resulttext = document.getElementById("multiply")
+function resultfunction() {
+    var input1value = Number(input1.value)
+    var input2value = Number(input2.value)
+    
+    var total = input1value*input2value
+    resulttext.textContent=total
+}
 

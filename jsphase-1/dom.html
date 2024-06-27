@@ -9,7 +9,7 @@
     <p id="one">Hello</p>
 
     <h1 id="titleChange">Hello Dinesh</h1>
-    <button onclick="change()">Click to change</button>
+    <button onmouseover="change()">Click to change</button>
 
     <script>
         var h1=document.getElementById("titleChange")
@@ -24,26 +24,38 @@
     <br> <br> <hr> <br> <br>
 
 
-    <input type="text" id="num1" />
-    <input type="text" id="num2" />
+    <input type="text" value="4" id="number1" />
+    <input type="text" value="6" id="number2" />
+    <button onclick="resultfunction()">Calc Total</button>
+    <p>Want to know the result <b id="multiply">ans</b> </p>
+
+    <br> <br> <hr> <br> <br>
+
+
+    <input type="text" value="4" id="num1" />
+    <input type="text" value="6" id="num2" />
     <button onclick="resultfun()">Calc Total</button>
-    <p id="result">Result</p>
+    <p>Result <b id="result"></b></p>
 
     <script>
         //Selecting the input 1&2
-        var m = document.getElementById("num1")
-        var n = document.getElementById("num2")
+        var box1 = document.getElementById("num1")
+        var box2 = document.getElementById("num2")
         // Selecting result
-        var t = document.getElementById("result")
+        var result = document.getElementById("result")
+
+        console.log("Input value is",box1.value,box2.value)
 
         function resultfun() {
-            var mvalue = Number(m.value)
-            var nvalue = Number(n.value)
-
+            var mvalue = Number(box1.value)
+            var nvalue = Number(box2.value)
+            
             var total = mvalue+nvalue
-            t.textContent=total
+            result.textContent=total
         }
+        console.log("total")
     </script>
+
 
     <br>
     <br>
@@ -55,17 +67,18 @@
     <script>
         var a = document.getElementById("title")
 
-        console.log(a.textContent)
-        a.textContent = "Bye World"
+        // console.log(a.textContent)
+        a.textContent = "Bye Dinesh"
     </script>
     <!-- Exercise 1 -->
     
-    <script src="dom.js"></script>
-
-    <!-- Random number -->
+    <!-- Random number` -->
     <script>
         var z = Math.random()
         console.log(Math.floor(z*10)+1)
     </script>
+
+
+    <script src="dom.js"></script>
 </body>
 </html>
