@@ -6,48 +6,75 @@
 </head>
 <body>
     <h4>Task 1</h4>
-    <input id="inputBox" onkeyup="update()" />
-    <!-- <button onclick="update()">change</button> -->
+    <input id="inputBox" onkeyup="c()" />
+    <!-- <button onclick="c()">change</button> -->
     <h1 id="result">Type Something</h1>
 
     <script>
-        var inputBox = document.getElementById("inputBox")
-        var result = document.getElementById("result")
+        // var inputBox = document.getElementById("inputBox")
+        // var result = document.getElementById("result")
 
-        console.log(result.textContent)
+        // console.log(result.textContent)
 
-        function update() {
-            var entertext = inputBox.value
+        // function update() {
+        //     var entertext = inputBox.value
 
-            result.textContent = entertext
+        //     result.textContent = entertext
+        // }
+
+        var i = document.getElementById("inputBox")
+        var o = document.getElementById("result")
+
+        console.log(o.textContent,"Hi")
+
+        function c () {
+            var ev = i.value 
+            o.textContent = ev
         }
+
     </script>
 
     <hr>
 
     <h4>Task 2</h4>
-    <button onclick="updatetext()">Add</button>
+    <button onclick="u()">Add</button>
     <div id="addText"></div>
 
     <script>
         // Select h1
-        var addText = document.getElementById("addText")
-        function updatetext() {
-            var listitem = document.createElement("h1")
-            listitem.textContent = "Hello"
-            addText.append(listitem)
+        // var addText = document.getElementById("addText")
+        // function updatetext() {
+        //     var listitem = document.createElement("h1")
+        //     listitem.textContent = i.value
+
+        //     addText.append(listitem)
+        // }
+        
+
+        var t = document.getElementById("addText")
+
+        function u() {
+            var li = document.createElement("h1")
+            li.textContent = i.value
+            t.append(li)
         }
     </script>
 
     <hr>
 
     <h4>Task 3</h4>
-    <button id="btn" onclick="changeColor()">Change Color</button>
+    <button id="btn" onclick="cc()">Change Color</button>
 
     <script>
-        var btn = document.getElementById("btn")
-        function changeColor() {
-            btn.style.backgroundColor = "red"
+        // var btn = document.getElementById("btn")
+        // function changeColor() {
+        //     btn.style.backgroundColor = "red"
+        //     btn.style.padding = "10px 20px"
+        // }
+
+        var b = document.getElementById("btn")
+        function cc() {
+            b.style.backgroundColor = "red"
         }
     </script>
 
@@ -55,18 +82,26 @@
 
     <h4>Task 4</h4>
     <h1 id="resultName">Name</h1>
-    <button onclick="changeName(event)">Dinesh</button>
-    <button onclick="changeName(event)">Srilatha</button>
-    <button onclick="changeName(event)">Srishti</button>
+    <button onclick="cn(event)">Dinesh</button>
+    <button onclick="cn(event)">Srilatha</button>
+    <button onclick="cn(event)">Srishti</button>
 
     <script>
-        var resultName = document.getElementById("resultName")
+        // var resultName = document.getElementById("resultName")
 
-        function changeName(event) {
-            resultName.textContent = event.target.textContent
+        // function changeName(event) {
+        //     resultName.textContent = event.target.textContent
 
+        //     console.log(event.target.textContent)
+        // }
+
+        var on = document.getElementById("resultName")
+
+        function cn(event) {
+            on.textContent = event.target.textContent
             console.log(event.target.textContent)
         }
+
     </script>
 
     <hr>
@@ -79,10 +114,23 @@
         <h1 onclick="deleteitem(event)">Four</h1>
         <h1 onclick="deleteitem(event)">Five</h1>
         <h1 onclick="deleteitem(event)">Six</h1>
+
+        <!--  -->
+        <h1 onclick="di(event)">One 1</h1>
+        <h1 onclick="di(event)">Two 2</h1>
+        <h1 onclick="di(event)">Three 3</h1>
+        <h1 onclick="di(event)">Four 4</h1>
+        <h1 onclick="di(event)">Five 5</h1>
+        <button >Delete</button>
     </div>
 
     <script>
-        function deleteitem(event) {
+        // function deleteitem(event) {
+        //     event.target.remove()
+        // }
+
+        var h1 = document.getElementById("one")
+        function di(event) {
             event.target.remove()
         }
     </script>
