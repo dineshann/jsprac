@@ -1,13 +1,11 @@
 /** JavaScript Random **/ 
-/*
-    Guess the number
-*/ 
-
 var a = Math.random(3.88)
 
 console.log(a*100)
 
-
+/*
+    Guess the number
+*/ 
 //Selecting input box, paragraph
 var guessnumber = document.getElementById("guessnumber")
 var result = document.getElementById("result")

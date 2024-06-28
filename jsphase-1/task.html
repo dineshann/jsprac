@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h4>Task 1</h4>
+    <input id="inputBox" onkeyup="update()" />
+    <!-- <button onclick="update()">change</button> -->
+    <h1 id="result">Type Something</h1>
+
+    <script>
+        var inputBox = document.getElementById("inputBox")
+        var result = document.getElementById("result")
+
+        console.log(result.textContent)
+
+        function update() {
+            var entertext = inputBox.value
+
+            result.textContent = entertext
+        }
+    </script>
+
+    <hr>
+
+    <h4>Task 2</h4>
+    <button onclick="updatetext()">Add</button>
+    <div id="addText"></div>
+
+    <script>
+        // Select h1
+        var addText = document.getElementById("addText")
+        function updatetext() {
+            var listitem = document.createElement("h1")
+            listitem.textContent = "Hello"
+            addText.append(listitem)
+        }
+    </script>
+
+    <hr>
+
+    <h4>Task 3</h4>
+    <button id="btn" onclick="changeColor()">Change Color</button>
+
+    <script>
+        var btn = document.getElementById("btn")
+        function changeColor() {
+            btn.style.backgroundColor = "red"
+        }
+    </script>
+
+    <hr>
+
+    <h4>Task 4</h4>
+    <h1 id="resultName">Name</h1>
+    <button onclick="changeName(event)">Dinesh</button>
+    <button onclick="changeName(event)">Srilatha</button>
+    <button onclick="changeName(event)">Srishti</button>
+
+    <script>
+        var resultName = document.getElementById("resultName")
+
+        function changeName(event) {
+            resultName.textContent = event.target.textContent
+
+            console.log(event.target.textContent)
+        }
+    </script>
+
+    <hr>
+
+    <h4>Task 5</h4>
+    <div class="remove">
+        <h1 onclick="deleteitem(event)">One</h1>
+        <h1 onclick="deleteitem(event)">Two</h1>
+        <h1 onclick="deleteitem(event)">Three</h1>
+        <h1 onclick="deleteitem(event)">Four</h1>
+        <h1 onclick="deleteitem(event)">Five</h1>
+        <h1 onclick="deleteitem(event)">Six</h1>
+    </div>
+
+    <script>
+        function deleteitem(event) {
+            event.target.remove()
+        }
+    </script>
+</body>
+</html>
