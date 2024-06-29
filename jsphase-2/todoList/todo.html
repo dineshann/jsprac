@@ -1,0 +1,16 @@
+<h1 class="ok">One</h1>
+<h1 class="ok">Two</h1>
+<h1 class="ok">Three</h1>
+
+<script>
+    var a = document.querySelectorAll(".ok")
+    for (count = 0; count < a.length; count = count+1) {
+        console.log(a[count].textContent)
+    }
+</script>
+
+<script>
+    var h1ele = document.createElement("h1")
+    h1ele.innerHTML = "Bye"
+    console.log(h1ele)
+</script>

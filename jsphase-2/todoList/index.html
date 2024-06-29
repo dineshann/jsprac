@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo List</title>
+</head>
+<body>
+    <h3>What is innerHTML?</h3>
+    <p>
+        'innerHTML' is a property in JavaScript that allows you to access
+        or modify the HTML content of an element in the Document Object Model(DOM).
+        It is primarily used to retrieve or set the HTML content inside and 
+        HTML element.
+    </p>  
+
+    <hr>
+
+    <div class="one">
+        <h1>Hello</h1>
+    </div>
+
+    <script>
+        var div = document.querySelector(".one")
+        console.log(div)
+        div.innerHTML = "<h1>Bye</h1>"
+    </script>
+
+    <hr>
+
+    <h3>Different ways of selecting an Element</h3>
+    <ul>
+        <li>queryselector</li>
+        <li>queryselectorAll</li>
+        <li>getElementById</li>
+        <li>getElementByClassName</li>
+        <li>getElementByTagName</li>
+    </ul>
+
+</body>
+</html>
