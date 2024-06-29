@@ -19,6 +19,20 @@
             width: 100%;
             height: 300px;
         }
+
+        #boxes {
+            width: 150px;
+            height: 150px;
+            background-color: lightgreen;
+            border-radius: 1rem;
+            margin-bottom: 1rem;
+            transition: ease-in 300ms ;
+        }
+
+        #boxes.bigBox {
+            width: 100%;
+            height: 400px;
+        }
     </style>
 </head>
 <body>
@@ -41,6 +55,23 @@
         function change() {
             box.style.backgroundColor = "green"
             box.setAttribute("class","widthmax")
+        }
+    </script>
+
+    <br> <hr> <br>
+
+    <h2>Practice</h2>
+    <div id="boxes"></div>
+    <button onclick="schange()">Change</button>
+
+    <script>
+        var boxes = document.getElementById("boxes")
+
+        console.log(boxes,"Hello")
+
+        function schange() {
+            boxes.style.backgroundColor = "lightcoral"
+            boxes.setAttribute("class","bigBox")
         }
     </script>
 
