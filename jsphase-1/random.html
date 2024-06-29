@@ -63,6 +63,7 @@
     <h2>Practice</h2>
     <div id="boxes"></div>
     <button onclick="schange()">Change</button>
+    <button onclick="reset()">Reset</button>
 
     <script>
         var boxes = document.getElementById("boxes")
@@ -72,6 +73,11 @@
         function schange() {
             boxes.style.backgroundColor = "lightcoral"
             boxes.setAttribute("class","bigBox")
+        }
+
+        function reset() {
+            boxes.style.backgroundColor= "black"
+            boxes.removeAttribute("class","bigBox")
         }
     </script>
 
