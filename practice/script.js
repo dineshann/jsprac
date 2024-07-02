@@ -55,3 +55,13 @@ function fav() {
 
 fav()
 fav()
+
+// Parameters
+function area(l,b) {
+    console.log(l*b,"sqft")
+}
+
+let length = 40
+let breath = 50
+
+area(length,breath)
