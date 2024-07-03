@@ -54,14 +54,56 @@ function fav() {
 }
 
 fav()
-fav()
 
 // Parameters
+function adding(e,f) {
+    console.log(e+f)
+}
+adding(3,2)
+
 function area(l,b) {
-    console.log(l*b,"sqft")
+    var m = l*b
+    console.log(m + " sqft")
 }
 
 let length = 40
 let breath = 50
 
 area(length,breath)
+
+// Return
+function xyz() {
+    return "Return Value" 
+}
+
+let f = xyz()
+
+console.log(f)
+
+// if else
+var i = true
+if (i) {
+    console.log("This is True")
+} else {
+    console.log("This is False")
+}
+
+let signal = "o"
+if (signal == "r") {
+    console.log("Stop")
+}
+if (signal == "o") {
+    console.log("Get Reddy")
+}
+if (signal == "g") {
+    console.log("Go")
+}
+
+var s = 65
+if (s<=40) {
+    console.log("Need to perform well")
+} else if(s>40 && s<=70) {
+    console.log("Good")
+} else if (s>70) {
+    console.log("Great")
+}
