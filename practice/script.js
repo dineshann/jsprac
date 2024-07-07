@@ -73,12 +73,20 @@ area(length,breath)
 
 // Return
 function xyz() {
-    return "Return Value" 
+    return "Return Value"   
 }
 
 let f = xyz()
 
-console.log(f)
+console.log(f," form F")
+
+function plus(aa,bb){
+    return (aa+bb)
+}
+
+let addplus = plus(35,59)
+
+console.log("Return addition",addplus)
 
 // if else
 var i = true
@@ -106,4 +114,19 @@ if (s<=40) {
     console.log("Good")
 } else if (s>70) {
     console.log("Great")
+}
+
+// For loop
+for (i = 1; i <= 10; i=i+2) {
+    console.log(i)
+}
+// ! Reverse
+for (a=10;a>=1;a=a-1) {
+    console.log(a+"A") 
+}
+for (n=5;n>=0;n=n-1){
+    console.log(n)
+}
+for (tb=1;tb<=5;tb=tb+1) {
+    console.log("4x"+tb+"="+(tb*4)) 
 }
